@@ -63,11 +63,12 @@
           // No need to change anything ABOVE this line ^
 
           return(
+            <>
             <h1>Draw a Card</h1>
-            <button onClick={}>
+            <button onClick={() => console.log(this.drawCard(this.state))}>
               Click to Draw a Card
-            </button>
-            <button onClick={shuffle}>
+            </button>      
+            <button onClick={() => console.log(this.shuffle(this.state))}>
               Return Cards and Shuffle Deck
             </button>
             <div style={handStyles}>
@@ -79,6 +80,7 @@
                 )
               })}
             </div>
+            </>
           )
         }
       }
